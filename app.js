@@ -23,6 +23,10 @@ app.get("/:url_hash", (req, res) => {
   }).catch(err => res.send(err.message));
 });
 
+app.get("/dfdsf",(req, resp) => {
+    resp.send("there");
+})
+
 app.use("/short", shortnerController);
 
 app.listen(3002, () => {
